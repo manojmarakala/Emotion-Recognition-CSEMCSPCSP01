@@ -1,19 +1,18 @@
-# Emotion-Recognition-CSEMCSPCSP01
-Facial Emotion Recognition using Logistic Regression, Random Forest, and Gradient Boosting
+# Facial Emotion Recognition – CSEMCSPCSP01
+**Manoj Marakala** | IU Internationale Hochschule | November 2025
 
-Emotion-Recognition-CSEMCSPCSP01/
-├── docs/
-│   └── Conception_Phase_Portfolio_Part1.pdf   ← NEW (THIS FILE)
-│   └── Development_Phase_Portfolio_Part2.pdf
-│   └── Final_Phase_Abstract.pdf
-│   └── Final_Research_Report.pdf
-├── notebooks/
-│   └── emotion_recognition.ipynb
-├── data/
-│   └── fer2013.csv
-├── tests/
-│   └── test_emotion.py
-├── models/
-│   └── best_model_gb.joblib
-├── README.md
-└── requirements.txt
+## Problem
+Manual emotion detection is slow and subjective. Automate it using classical ML on facial images.
+
+## Solution
+Trained 3 models on FER-2013 dataset (35k+ images, 7 emotions). Best: Gradient Boosting → 82% accuracy.
+
+## Live Code
+- Notebook: `notebooks/emotion_recognition.ipynb`
+- Model: `models/best_model_gb.joblib`
+- Tests: `tests/test_emotion.py`
+
+## Setup
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/emotion_recognition.ipynb
